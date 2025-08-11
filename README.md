@@ -20,93 +20,92 @@ Destaques didáticos da formação ONE + Alura aplicados aqui:
 - Atualização automática do ano no rodapé.
 
 ## Stack e ferramentas
+# Portfolio — Vite + TypeScript
+
+
+
+## About
+This repository hosts my personal portfolio, built with Vite + TypeScript and CSS. Besides basic information and contact links, it automatically lists my GitHub projects, making it easy to find live demos and source code.
+
+Program highlights from Oracle Next Education applied here:
+- Project organization and version control with Git/GitHub (conventional commits, branches).
+- Accessibility (proper ARIA, keyboard navigation, focus management and labels).
+- Responsiveness, typography, and CSS best practices.
+- Modern JavaScript/TypeScript (fetch API, ES modules, typing, safe DOM APIs).
+- Fast builds with Vite and lint/format automation (ESLint + Prettier).
+
+## Key features
+- Mobile menu with state toggle and ARIA attributes.
+- Smooth scrolling and active section highlighting on scroll.
+- Dynamic projects grid powered by the GitHub API, with priority for repositories that have a live demo.
+- Loading skeletons and error handling for better UX.
+- Auto-updating year in the footer.
+
+## Stack & tooling
 - Vite 5, TypeScript 5, HTML5, CSS3
 - ESLint 9 (typescript-eslint), Prettier 3
 - Git + GitHub
 
-## Estrutura do projeto
- - `index.html` — marcação e seções principais (Hero, Sobre, Skills, Projetos, Contato)
- - `src/main.ts` — lógica de UI, acessibilidade, scroll e busca de projetos no GitHub
- - `src/style.css` — estilos globais e utilitários
- - `vite.config.ts` — configuração do servidor (porta e auto-open)
- - `images/` — assets do avatar
+## Project structure
+- `index.html` — markup and main sections (Hero, About, Skills, Projects, Contact)
+- `src/main.ts` — UI logic, accessibility, scrolling, and GitHub projects fetch
+- `src/style.css` — global styles and utilities
+- `vite.config.ts` — dev server configuration (port and auto-open)
+- `images/` — avatar assets
 
-## Como executar localmente
-Pré-requisitos: Node.js 18+ e npm.
+## Run locally
+Prerequisites: Node.js 18+ and npm.
 
-Instalação e desenvolvimento:
+Install and start dev server:
 ```bash
 npm install
 npm run dev
 ```
-Acesse http://localhost:5173
+Open http://localhost:5173
 
-Build de produção e preview:
+Production build and preview:
 ```bash
 npm run build
 npm run preview
 ```
 
-## Configuração dos projetos do GitHub
-A seção "Projetos" lê repositórios públicos via GitHub API. Você pode controlar o usuário e uma lista de repositórios priorizados diretamente no `index.html` usando data-atributos:
+## GitHub projects configuration
+The “Projects” section fetches public repositories via the GitHub API. Control the user and an optional prioritized list of repositories via data attributes in `index.html`:
 
 ```html
 <section id="projetos" data-github-user="joqbay7" data-include-repos="repoA,repoB">...</section>
 ```
 
-- `data-github-user` define o usuário do GitHub.
-- `data-include-repos` (opcional) prioriza e filtra repositórios específicos, quando informado.
+- `data-github-user` sets the GitHub user.
+- `data-include-repos` (optional) prioritizes and filters specific repositories, when defined.
 
-Se um repositório tiver `homepage` configurado, o botão "Ver demo" apontará para essa URL. Caso contrário, o código tenta inferir GitHub Pages no padrão `https://USUARIO.github.io/NOME_DO_REPO/`.
+If a repository has a `homepage` set, the “Live demo” button points to that URL. Otherwise, the code tries to infer a GitHub Pages URL using the pattern `https://USER.github.io/REPO_NAME/`.
 
-## Acessibilidade
-- Botão do menu com `aria-expanded` e rótulos claros.
-- Fechamento do menu por clique externo e tecla `Esc`.
-- Links de navegação com estado ativo baseado na seção visível.
-- Link "Ir para conteúdo" para pular diretamente ao conteúdo principal.
+## Accessibility
+- Menu button with `aria-expanded` and clear labels.
+- Close menu on outside click and `Esc` key.
+- Navigation links reflect the currently visible section.
+- “Skip to content” link to jump to the main content.
 
-## Deploy
-Este projeto pode ser hospedado facilmente no GitHub Pages, Vercel ou Netlify. Para GitHub Pages (build gerado em `dist/`):
+## Deployment
+This project can be hosted on GitHub Pages, Vercel, or Netlify. For GitHub Pages (build output in `dist/`):
 
-1. Execute o build: `npm run build`.
-2. Publique o conteúdo da pasta `dist/` na branch `gh-pages` ou use uma Action pronta para Vite.
+1. Build the project: `npm run build`.
+2. Publish the `dist/` folder to the `gh-pages` branch or use a prebuilt Vite Action.
 
-## Roadmap (próximos passos)
-- [ ] Adicionar testes rápidos de UI/DOM
-- [ ] Melhorar semântica e contraste em temas escuros
-- [ ] Adicionar i18n opcional (PT-BR/EN)
+## Roadmap
+- [ ] Add quick UI/DOM tests
+- [ ] Improve semantics and contrast for dark themes
+- [ ] Optional i18n (EN/PT-BR)
 
-## Créditos
-- Formação Oracle Next Education (ONE) — Alura
-- Ícones, tipografia e inspirações de layouts baseados em boas práticas da comunidade Front-end.
+## Credits
+- Oracle Next Education — Alura
+- Icons, typography, and layout inspiration based on Front-end community best practices.
 
-## Contato
+## Contact
 - Email: julio.maciel@cs.up.edu.br
 - GitHub: https://github.com/joqbay7
 - LinkedIn: https://www.linkedin.com/
-# ortfolio-version1 (Vite + TypeScript)
-
-Projeto inicial criado com Vite (vanilla) e TypeScript.
-
-## Pré-requisitos
-- Node.js 18+ e npm
-
-## Instalar dependências
-```powershell
-npm install
-```
-
-## Ambiente de desenvolvimento
-```powershell
-npm run dev
-```
-Acesse: http://localhost:5173
-
-## Build de produção
-```powershell
-npm run build
-```
-
 ## Preview do build
 ```powershell
 npm run preview
