@@ -1,2 +1,23 @@
+* text=auto eol=lf
+
+# Images as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# Diff drivers (hints only)
+*.ts diff=cpp
+*.tsx diff=cpp
+*.css diff=css
+*.html diff=html
+*.json diff=json
+*.md diff=markdown
+
+# Archives as binary
+*.zip binary
+*.gz binary
+*.7z binary
 # Normalize line endings across platforms
 * text=auto
