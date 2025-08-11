@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <meta name="description" content="Portfólio pessoal" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <a class="skip-to-content" href="#inicio">Ir para conteúdo</a>
+    <header class="header">
+      <nav class="nav container">
+        <a class="brand" href="#inicio">Meu Portfólio</a>
+        <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav__list" role="menubar">
+          <li role="none"><a role="menuitem" class="nav__link is-active" href="#inicio">Início</a></li>
+          <li role="none"><a role="menuitem" class="nav__link" href="#sobre">Sobre</a></li>
+          <li role="none"><a role="menuitem" class="nav__link" href="#skills">Skills</a></li>
+          <li role="none"><a role="menuitem" class="nav__link" href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio" class="main">
+      <section class="hero container section">
+        <div class="hero__content">
+          <h1 class="hero__title">JULIO JOQBAY</h1>
+          <p class="hero__subtitle">Olá, sou estudante de <strong>Engenharia de Software</strong>, 100% focado em desenvolver soluções tecnológicas.</p>
+          <div class="cta">
+            <a class="btn btn--primary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn--outline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <span class="avatar avatar--circle" aria-hidden="true">
+            <img src="/images/julio_joqbay.png" alt="Foto de perfil" class="hero__img" />
+          </span>
+        </div>
+      </section>
+
+      <section id="sobre" class="about container section">
+  <h2 class="section__title">Sobre mim</h2>
+  <p>
+          Sou apaixonado por transformar ideias em experiências digitais. Sou estudante de Engenharia de Software 100% focado em desenvolvedor soluções tecnológicas.
+        </p>
+      </section>
+
+      <section id="skills" class="skills container section">
+  <h2 class="section__title">Skills</h2>
+        <ul class="grid">
+          <li class="card">HTML5</li>
+          <li class="card">CSS3</li>
+          <li class="card">TypeScript</li>
+          <li class="card">Vite</li>
+          <li class="card">Git & GitHub</li>
+          <li class="card">Acessibilidade</li>
+        </ul>
+      </section>
+
+  <section id="projetos" class="projects container section" data-github-user="joqbay7" data-include-repos="joqbay-guess-number,secret-friend">
+  <h2 class="section__title">Projetos</h2>
+        <div id="projects-grid" class="grid projects__grid" aria-live="polite"></div>
+      </section>
+
+      <section id="contato" class="contact container section">
+  <h2 class="section__title">Contato</h2>
+        <p>Quer conversar? Envie um email para <a href="mailto:julio.maciel@cs.up.edu.br">julio.maciel@cs.up.edu.br</a>.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+  <p>© <span id="year"></span> JULIO JOQBAY. <span>Todos os direitos reservados.</span></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
