@@ -1,4 +1,4 @@
-# Portfolio (Vite + TypeScript)
+# ortfolio-version1 (Vite + TypeScript)
 
 Projeto inicial criado com Vite (vanilla) e TypeScript.
 
